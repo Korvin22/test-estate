@@ -9,20 +9,49 @@
 
 <body class="page page_preload">
   <div class="page__container">
-    <header class="header">
-      <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
-    </header>
-    <main class="content page__content">
-      <section class="profile">
+    <div class="image__container">
 
-      </section>
-      <section class="elements">
+      <header class="header">
+        <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
+        <ul class="header__list">
+          <a class="header__link">Жилые комплексы</a>
+          <a class="header__link">О компании</a>
+          <a class="header__link">Как купить</a>
+          <a class="header__link">Контакты</a>
+        </ul>
+        <div class="header__call">
+          <p class="header__number">+7 (918) 377-48-10</p>
+          <a class="header__description">Заказать звонок</a>
+        </div>
+      </header>
+      <main class="content page__content">
+        <section class="navigation">
+          <ul class="navigation__list">
+            <a class="navigation__link">Преимущества</a>
+            <a class="navigation__link">Инфраструктура</a>
+            <a class="navigation__link">Планировка</a>
+            <a class="navigation__link">Отделка</a>
+            <a class="navigation__link">Описание</a>
+            <a class="navigation__link">Контакты</a>
+            <a class="navigation__link">Документация</a>
+          </ul>
+        </section>
+        <section class="project">
+          <h1 class="project__title">Жилой Комплекс <span class="project__title_bold">«Яблоновский»</span></h1>
+          <p class="project__subtitle">Краснодар, пгт. Яблоновский ул. Кобцевой</p>
+          <p class="project__price">от 63 801 до 65 678 ₽/м²</p>
+          <button class="project__button">Узнать стоимость проекта</button>
+          <ul class="project__conditions">
+            <li class="project__condition">Квартиры<span class="project__condition_bold">от 63 801 ₽/м²</span></li>
+            <li class="project__condition">Стоимость<span class="project__condition_bold">от 4,44 млн ₽</span></li>
+            <li class="project__condition">Класс<span class="project__condition_bold">Эконом</span></li>
+            <li class="project__condition">Срок сдачи<span class="project__condition_bold">Сдан</span></li>
+          </ul>
+        </section>
+      </main>
+    </div>
 
-
-      </section>
-    </main>
     <footer class="footer">
-      <p class="footer__copyright">© 2022 Mesto Russia</p>
     </footer>
   </div>
 

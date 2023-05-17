@@ -1,0 +1,84 @@
+.project {
+  margin: 65px auto 33px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project__title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 0 28px 0;
+}
+
+.project__title_bold {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.project__subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.project__price {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.project__button {
+  height: 56px;
+  width: 325px;
+  border-radius: 10px;
+  background-color: #31bef4;
+  margin-bottom: 41px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.project__conditions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.project__condition {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  height: 101px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 15px solid #f9fcfd;
+  padding: 20px 0 0 24px;
+}
+
+.project__condition_bold {
+  padding-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}

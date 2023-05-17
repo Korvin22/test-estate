@@ -1,7 +1,7 @@
 {
-  "name": "mesto2",
+  "name": "test_estate",
   "version": "1.0.0",
-  "description": "Одностраничный командный проект, состоящий из 4 блоков. Используется HTML, CSS и JS. В проекте используется абсолютное и относительное позиционирование, псевдоэлементы, флекс, грид, адаптивная верстка. Реализована форма, логика выполнена в JavaScript.  Структура файлов и путь к файлам организованы по БЭМ, организация файловой структуры - Nested.",
+  "description": "Одностраничный проект, состоящий из 8 блоков. Используется HTML, CSS и JS. В проекте используется абсолютное и относительное позиционирование, псевдоэлементы, флекс, грид, адаптивная верстка. Логика выполнена в JavaScript.  Структура файлов и путь к файлам организованы по БЭМ, организация файловой структуры - Nested. Использованы webpack, babel",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && webpack --mode=production",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Korvin22/mesto2.git"
+    "url": "git+https://github.com/Korvin22/test-estate.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Korvin22/mesto2/issues"
+    "url": "https://github.com/Korvin22/test-estate/issues"
   },
-  "homepage": "https://github.com/Korvin22/mesto2#readme",
+  "homepage": "https://github.com/Korvin22/test-estate#readme",
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",

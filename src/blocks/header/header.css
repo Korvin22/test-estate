@@ -1,27 +1,78 @@
-/*блок центрирован в соответствии с макетом, на любых разрешениях работает верно,
- замечание появилось первый раз на 3 итерации и непонятно*/
 .header {
-  max-width: 880px;
-  width: calc(100% - 400px);
-  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 300px);
+  margin: 15px auto 12px auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    width: calc(100%);
+  }
+}
+
+.header__logo {
+  height: 94px;
+  width: 190px;
+  display: flex;
+}
+
+@media screen and (max-width: 528px) {
+  .header__logo {
+    height: 79px;
+    width: 148px;
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.header__link {
+  padding-right: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  list-style-type: none;
+}
+
+.header__link:last-of-type {
+  padding-right: 0;
+}
+
+.header__link:hover {
+  color: #31bef4;
+}
+
+.header__description {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+.header__number {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+.header__call {
   display: flex;
   flex-direction: column;
-  border-bottom:1px solid rgba(84,84,84,0.7);
+  align-items: center;
+  justify-content: center;
 }
-
-@media screen and (max-width: 1240px){
-.header {
-    width: calc(100% - 200px);}
-}
-
-@media screen and (max-width: 750px){
-  .header {
-      width: calc(100% - 100px);}
-  }
-
-
-@media screen and (max-width: 520px){
-  .header {
-      width: 100%;
-
-  }}

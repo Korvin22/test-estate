@@ -1,21 +1,34 @@
 .page__container {
-  background-color: #000000;
-  color: #FFFFFF;
-  font-family: 'Inter', 'Arial', sans-serif;
+  font-family: "Gilroy", "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   min-width: 320px;
-  max-width: 1280px;
+  max-width: 1440px;
+  border: 1px solid red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 40px 0 60px 0;
-
+  padding: 0 0 100px 0;
+  position: relative;
 }
 
-@media screen and (max-width:568px) {
+.page__image {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.image__container {
+  position: relative;
+  background-image: url("../../../images/house.svg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 568px) {
   .page__container {
     padding: 28px 0 36px;
   }
