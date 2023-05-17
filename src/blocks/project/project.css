@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 17px;
+  gap: 36px;
   margin: 0;
   padding: 0;
 }
@@ -72,6 +72,7 @@
   border-radius: 10px;
   border: 15px solid #f9fcfd;
   padding: 20px 0 0 24px;
+  box-shadow: 0px 5px 15px 0px #212d5533;
 }
 
 .project__condition_bold {
