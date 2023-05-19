@@ -56,11 +56,25 @@
 
 .project__conditions {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto;
   gap: 36px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1140px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .project__conditions {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project__conditions {
+    max-width: 300px;
+  }
 }
 
 .project__condition {

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Строитель</title>
 </head>
 
 <body class="page page_preload">
@@ -22,6 +22,11 @@
           <p class="header__number">+7 (918) 377-48-10</p>
           <a class="header__description">Заказать звонок</a>
         </div>
+        <div class="header__menu">
+          <a class="header__link">Меню</a>
+          <button class="header__button"><img class="header__img" src="<%=require('./images/menu.svg')%>"
+              alt="меню"></button>
+        </div>
       </header>
       <main class="content page__content">
         <section class="navigation">
@@ -33,6 +38,8 @@
             <a class="navigation__link">Описание</a>
             <a class="navigation__link">Контакты</a>
             <a class="navigation__link">Документация</a>
+            <a class="navigation__link_open">Главная / Жилые комплексы /
+              / Яблоновский</a>
           </ul>
         </section>
         <section class="project">
@@ -140,9 +147,10 @@
         </section>
         <section class="description">
           <h2 class="description__title">Описание Жилого Комплекса</h2>
-          <p class="description__subtitle">Нажимайте <button><img class="description__image"
-                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button><button><img
-                class="description__image" src="<%=require('./images/arrr.svg')%>" alt="стрелка влево"></button> чтобы
+          <p class="description__subtitle">Нажимайте <button class="description__button"><img class="description__image"
+                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button><button
+              class="description__button"><img class="description__image" src="<%=require('./images/arrr.svg')%>"
+                alt="стрелка влево"></button> чтобы
             подробно ознакомится с
             проектом </p>
           <ul class="description__list">
@@ -161,7 +169,7 @@
           </ul>
           <div class="description__slider">
             <div class="description__container description__image_1">
-              <img class="description__image" src="<%=require('./images/67.svg')%>" alt="дом">
+              <img class="description__image description__image_5" src="<%=require('./images/67.svg')%>" alt="дом">
               <div class="description__content">
                 <h3 class="description__text_main">Территория</h3>
                 <p class="description__text">Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в пгт.
@@ -182,6 +190,19 @@
     </div>
     <footer class="footer">
     </footer>
+    <div class="menu">
+      <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
+      <ul class="header__list_menu header__list">
+        <a class="header__link">Жилые комплексы</a>
+        <a class="header__link">О компании</a>
+        <a class="header__link">Как купить</a>
+        <a class="header__link header__item_menu">Контакты</a>
+      </ul>
+      <div class="header__call_menu header__call">
+        <p class="header__number">+7 (918) 377-48-10</p>
+        <a class="header__description">Заказать звонок</a>
+      </div>
+    </div>
   </div>
 
 </body>

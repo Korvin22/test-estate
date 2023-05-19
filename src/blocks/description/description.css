@@ -3,7 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 300px);
+  max-width: calc(100% - 300px);
+}
+
+@media screen and (max-width: 1200px) {
+  .description {
+    width: calc(100%);
+  }
 }
 
 .description__title {
@@ -24,7 +30,26 @@
 }
 
 .description__list {
-  display: flex;
+  display: grid;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1140px;
+}
+
+@media screen and (max-width: 1200px) {
+  .description__list {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .description__list {
+    max-width: 300px;
+  }
 }
 
 .description__item {
@@ -32,11 +57,6 @@
   height: 72px;
   border: 15px solid #f9fcfd;
   box-shadow: 0px 5px 15px 0px #212d5533;
-  margin-right: 40px;
-}
-
-.description__item:last-child {
-  margin-right: 0;
 }
 
 .description__text {
@@ -55,27 +75,66 @@
   display: grid;
   gap: 30px;
   grid-template:
-    "A B"
-    "A C" 1fr
-    "A D" 1fr
+    "A B" auto
+    "A C" auto
+    "A D" auto
     / auto 1fr;
-    margin-top:60px;
-    margin-bottom:114px;
+  margin-top: 60px;
+  margin-bottom: 114px;
+}
+
+@media screen and (max-width: 1200px) {
+  .description__slider {
+    display: grid;
+    gap: 15px;
+    grid-template:
+      "A A A" auto
+      "B C D" auto
+      / 1fr 1fr 1fr;
+    margin-top: 60px;
+    margin-bottom: 114px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .description__slider {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "A " auto
+      "B " auto
+      "C " auto
+      "D " auto
+      / minmax(320px, 100%);
+    margin-top: 60px;
+    margin-bottom: 114px;
+  }
 }
 
 .description__image_1 {
   grid-area: A;
+  max-width: 100%;
+  justify-self: center;
 }
 .description__image_2 {
   grid-area: B;
+  justify-self: center;
 }
 
 .description__image_3 {
   grid-area: C;
+  justify-self: center;
 }
 
 .description__image_4 {
   grid-area: D;
+  justify-self: center;
+}
+@media screen and (max-width: 900px) {
+  .description__image_5 {
+    max-width: 100%;
+    max-height: 553px;
+  }
 }
 .description__container {
   position: relative;
@@ -87,6 +146,14 @@
   left: 27px;
   background: #ffffffd9;
   max-width: 538px;
+}
+
+@media screen and (max-width: 550px) {
+  .description__content {
+    max-width: 320px;
+    top: 10px;
+    left: 5px;
+  }
 }
 
 .description__text_main {
@@ -103,4 +170,10 @@
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  overflow: hidden;
+}
+
+.description__button {
+  border: none;
+  background-color: transparent;
 }
