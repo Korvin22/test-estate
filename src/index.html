@@ -145,14 +145,17 @@
             </ul>
           </div>
         </section>
-        <section class="description">
+        <section class="description slider">
           <h2 class="description__title">Описание Жилого Комплекса</h2>
-          <p class="description__subtitle">Нажимайте <button class="description__button"><img class="description__image"
-                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button><button
-              class="description__button"><img class="description__image" src="<%=require('./images/arrr.svg')%>"
-                alt="стрелка влево"></button> чтобы
-            подробно ознакомится с
-            проектом </p>
+          <p class="description__subtitle">Нажимайте
+          <div class='swiper-button-prev'> <button class="description__button"><img class="description__image"
+                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button></div>
+          <div class='swiper-button-next'><button class="description__button"><img class="description__image"
+                src="<%=require('./images/arrr.svg')%>" alt="стрелка влево"></button></div>
+          </p>
+          чтобы
+          подробно ознакомится с
+          проектом </p>
           <ul class="description__list">
             <div class="description__item">
               <p class="description__text">Парковка</p>
@@ -167,8 +170,12 @@
               <p class="description__text">Территория</p>
             </div>
           </ul>
-          <div class="description__slider">
-            <div class="description__container description__image_1">
+          <div class="description__slider swiper-wrapper">
+            <div class='swiper-button-prev'> <button class="description__button"><img class="description__image"
+                  src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button></div>
+            <div class='swiper-button-next'><button class="description__button"><img class="description__image"
+                  src="<%=require('./images/arrr.svg')%>" alt="стрелка влево"></button></div>
+            <div class="description__container description__image_1 swiper-slide">
               <img class="description__image description__image_5" src="<%=require('./images/67.svg')%>" alt="дом">
               <div class="description__content">
                 <h3 class="description__text_main">Территория</h3>
@@ -176,33 +183,40 @@
                   Яблоновский. За пять минут пешком можно дойти до муниципальной поликлиники, школы и детского садика.
 
                   Этот жилой комплекс располагается в непосредственной близости от улицы Гагарина, где проходит
-                  абсолютное большинство маршрутов общественного транспорта, соответственно легко добраться во все части
+                  абсолютное большинство маршрутов общественного транспорта, соответственно легко добраться во все
+                  части
                   поселка и города Краснодар. Тут же располагается магазин «Магнит», «Магнит Косметик», МФЦ, овощной
                   рынок, мебельные магазины, аптеки и другие предприятия сферы услуг.</p>
               </div>
             </div>
-            <img class="description__image description__image_2" src="<%=require('./images/68.svg')%>" alt="дом">
-            <img class="description__image description__image_3" src="<%=require('./images/69.png')%>" alt="дом">
-            <img class="description__image description__image_4" src="<%=require('./images/70.svg')%>" alt="дом">
+            <div class="swiper-slide">
+              <img class="description__image description__image_2" src="<%=require('./images/68.svg')%>" alt="дом">
+            </div>
+            <div class="swiper-slide"></div><img class="description__image description__image_3"
+              src="<%=require('./images/69.png')%>" alt="дом">
           </div>
-        </section>
-      </main>
+          <div class="swiper-slide"></div><img class="description__image description__image_4"
+            src="<%=require('./images/70.svg')%>" alt="дом">
     </div>
-    <footer class="footer">
-    </footer>
-    <div class="menu">
-      <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
-      <ul class="header__list_menu header__list">
-        <a class="header__link">Жилые комплексы</a>
-        <a class="header__link">О компании</a>
-        <a class="header__link">Как купить</a>
-        <a class="header__link header__item_menu">Контакты</a>
-      </ul>
-      <div class="header__call_menu header__call">
-        <p class="header__number">+7 (918) 377-48-10</p>
-        <a class="header__description">Заказать звонок</a>
-      </div>
+  </div>
+  </section>
+  </main>
+  </div>
+  <footer class="footer">
+  </footer>
+  <div class="menu">
+    <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
+    <ul class="header__list_menu header__list">
+      <a class="header__link">Жилые комплексы</a>
+      <a class="header__link">О компании</a>
+      <a class="header__link">Как купить</a>
+      <a class="header__link header__item_menu">Контакты</a>
+    </ul>
+    <div class="header__call_menu header__call">
+      <p class="header__number">+7 (918) 377-48-10</p>
+      <a class="header__description">Заказать звонок</a>
     </div>
+  </div>
   </div>
 
 </body>
