@@ -145,14 +145,13 @@
             </ul>
           </div>
         </section>
-        <section class="description slider">
+        <section class="description swiper swiper-wrapper">
           <h2 class="description__title">Описание Жилого Комплекса</h2>
-          <p class="description__subtitle">Нажимайте <button class="description__button"><img class="description__image"
-                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button><button
-              class="description__button"><img class="description__image" src="<%=require('./images/arrr.svg')%>"
-                alt="стрелка влево"></button> чтобы
-            подробно ознакомится с
-            проектом </p>
+          <p class="description__subtitle">Нажимайте
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> чтобы
+          подробно ознакомится с
+          проектом </p>
           <ul class="description__list">
             <div class="description__item">
               <p class="description__text">Парковка</p>
@@ -168,7 +167,6 @@
             </div>
           </ul>
           <div class="description__slider">
-
             <div class="description__container description__image_1">
               <img class="description__image description__image_5" src="<%=require('./images/67.svg')%>" alt="дом">
               <div class="description__content">
@@ -196,16 +194,23 @@
         </section>
         <section>
           <div class="swiper swiper__1">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="orange"></div>
               </div>
-              <div class="swiper-slide"><div class="orange">2</div></div>
-              <div class="swiper-slide"><div class="orange">3</div></div>
-              <div class="swiper-slide"><div class="orange">4</div></div>
+              <div class="swiper-slide">
+                <div class="orange">2</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="orange">3</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="orange">4</div>
+              </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+
           </div>
         </section>
 
