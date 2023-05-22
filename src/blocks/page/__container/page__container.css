@@ -27,9 +27,3 @@
   background-image: url("../../../images/house.svg");
   background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 568px) {
-  .page__container {
-    padding: 28px 0 36px;
-  }
-}

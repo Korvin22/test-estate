@@ -33,15 +33,35 @@ const swiper = new Swiper(".swiper", {
 });
 
 const menu = document.querySelector(".header__button");
-
+const closeButton = document.querySelector(".menu__button-close");
+const complex = document.querySelector(".menu__link_complex");
+const buy = document.querySelector(".menu__link_buy");
 function openMenu() {
-  menu.classList.add("menu_opened");
+  document.querySelector(".menu").classList.add("menu_opened");
+}
+
+function toggleComplex() {
+  document.querySelector(".menu__list_complex").classList.toggle("menu__list_complex_opened");
+}
+function toggleBuy() {
+  document.querySelector(".menu__list_buy").classList.toggle("menu__list_complex_opened");
 }
 
 function closeMenu() {
-  menu.classList.remove("menu_opened");
+  document.querySelector(".menu").classList.remove("menu_opened");
 }
 
-menu.addEventListener(click, () => {
+menu.addEventListener("click", () => {
   openMenu();
 });
+
+closeButton.addEventListener("click", () => {
+  closeMenu();
+});
+complex.addEventListener("click", () => {
+  toggleComplex();
+})
+
+buy.addEventListener("click", () => {
+  toggleBuy();
+})

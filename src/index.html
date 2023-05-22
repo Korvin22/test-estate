@@ -147,15 +147,12 @@
         </section>
         <section class="description slider">
           <h2 class="description__title">Описание Жилого Комплекса</h2>
-          <p class="description__subtitle">Нажимайте
-          <div class='swiper-button-prev'> <button class="description__button"><img class="description__image"
-                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button></div>
-          <div class='swiper-button-next'><button class="description__button"><img class="description__image"
-                src="<%=require('./images/arrr.svg')%>" alt="стрелка влево"></button></div>
-          </p>
-          чтобы
-          подробно ознакомится с
-          проектом </p>
+          <p class="description__subtitle">Нажимайте <button class="description__button"><img class="description__image"
+                src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button><button
+              class="description__button"><img class="description__image" src="<%=require('./images/arrr.svg')%>"
+                alt="стрелка влево"></button> чтобы
+            подробно ознакомится с
+            проектом </p>
           <ul class="description__list">
             <div class="description__item">
               <p class="description__text">Парковка</p>
@@ -170,12 +167,9 @@
               <p class="description__text">Территория</p>
             </div>
           </ul>
-          <div class="description__slider swiper-wrapper">
-            <div class='swiper-button-prev'> <button class="description__button"><img class="description__image"
-                  src="<%=require('./images/arrl.svg')%>" alt="стрелка влево"></button></div>
-            <div class='swiper-button-next'><button class="description__button"><img class="description__image"
-                  src="<%=require('./images/arrr.svg')%>" alt="стрелка влево"></button></div>
-            <div class="description__container description__image_1 swiper-slide">
+          <div class="description__slider">
+
+            <div class="description__container description__image_1">
               <img class="description__image description__image_5" src="<%=require('./images/67.svg')%>" alt="дом">
               <div class="description__content">
                 <h3 class="description__text_main">Территория</h3>
@@ -192,31 +186,64 @@
             <div class="swiper-slide">
               <img class="description__image description__image_2" src="<%=require('./images/68.svg')%>" alt="дом">
             </div>
-            <div class="swiper-slide"></div><img class="description__image description__image_3"
-              src="<%=require('./images/69.png')%>" alt="дом">
+            <div class="swiper-slide"><img class="description__image description__image_3"
+                src="<%=require('./images/69.png')%>" alt="дом">
+            </div>
+            <div class="swiper-slide"><img class="description__image description__image_4"
+                src="<%=require('./images/70.svg')%>" alt="дом"></div>
           </div>
-          <div class="swiper-slide"></div><img class="description__image description__image_4"
-            src="<%=require('./images/70.svg')%>" alt="дом">
+
+        </section>
+        <section>
+          <div class="swiper swiper__1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="orange"></div>
+              </div>
+              <div class="swiper-slide"><div class="orange">2</div></div>
+              <div class="swiper-slide"><div class="orange">3</div></div>
+              <div class="swiper-slide"><div class="orange">4</div></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+
+        <div class="menu">
+          <div class="menu__wrapper">
+            <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
+            <button class="menu__button-close"><img class="menu__img" src="<%=require('./images/close.svg')%>"
+                alt="крестик"></button>
+          </div>
+          <ul class="menu__list">
+            <button class="menu__link menu__link_complex">Жилые комплексы
+            </button>
+            <div class="menu__list_complex">
+              <a class="menu__link">ЖК Космос</a>
+              <a class="menu__link">ЖК Яблоновский</a>
+              <a class="menu__link">ЖК на Шоссейной</a>
+              <a class="menu__link">ЖК Солнечный</a>
+            </div>
+            <a class="menu__link">О компании</a>
+            <button class="menu__link menu__link_buy">Как купить</button>
+            <div class="menu__list_buy">
+              <a class="menu__link">Ипотека</a>
+              <a class="menu__link">Военная ипотека</a>
+              <a class="menu__link">Материнский капитал</a>
+              <a class="menu__link">Наличный расчет</a>
+              <a class="menu__link">Рассрочка</a>
+            </div>
+            <a class="menu__link">Контакты</a>
+          </ul>
+          <div class="menu__call">
+            <p class="header__number">+7 (918) 377-48-10</p>
+            <a class="header__description">Заказать звонок</a>
+          </div>
+        </div>
+      </main>
     </div>
-  </div>
-  </section>
-  </main>
-  </div>
-  <footer class="footer">
-  </footer>
-  <div class="menu">
-    <img class="header__logo" src="<%=require('./images/Logo.svg')%>" alt="лого">
-    <ul class="header__list_menu header__list">
-      <a class="header__link">Жилые комплексы</a>
-      <a class="header__link">О компании</a>
-      <a class="header__link">Как купить</a>
-      <a class="header__link header__item_menu">Контакты</a>
-    </ul>
-    <div class="header__call_menu header__call">
-      <p class="header__number">+7 (918) 377-48-10</p>
-      <a class="header__description">Заказать звонок</a>
-    </div>
-  </div>
+    <footer class="footer">
+    </footer>
   </div>
 
 </body>
